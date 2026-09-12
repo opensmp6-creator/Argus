@@ -1,0 +1,6 @@
+{
+  "name": "ARGUS Control System",
+  "description": "Zentrales KI-Assistenz- und Kontrollterminal ARGUS mit Sprachsteuerung, Systemüberwachung, Smart Home, SCP-Containment und biometrischer Sicherheit.",
+  "requestFramePermissions": ["camera", "microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

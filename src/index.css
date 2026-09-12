@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    background-color: #0a0a0a;
+    color: #9ca3af;
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    overflow-x: hidden;
+  }
+}
+
+/* Custom Minimalist Scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0a0a0a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #222222;
+  border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #f97316;
+}
+
+/* Subtle amber & status glow utilities */
+.shadow-amber-glow {
+  box-shadow: 0 0 15px -2px rgba(249, 115, 22, 0.25);
+}
+
+.shadow-amber-glow-strong {
+  box-shadow: 0 0 25px 0px rgba(249, 115, 22, 0.45);
+}
+
+.shadow-red-glow {
+  box-shadow: 0 0 20px -2px rgba(239, 68, 68, 0.4);
+}
+
+/* Radar rotation animation */
+@keyframes argus-radar {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-radar {
+  animation: argus-radar 8s linear infinite;
+}
+
